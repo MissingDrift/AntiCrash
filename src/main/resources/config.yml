@@ -1,0 +1,82 @@
+fireworks:
+  max-explosions: 25
+
+signs:
+  max-characters-per-line: 20
+
+books:
+  max-book-page-size: 2560
+  max-book-total-size-multiplier: 0.98
+  no-books: false
+
+creative:
+  enabled: false
+  max-nbt-recursions: 10
+  max-items-in-containers: 54
+  enchantments:
+    max-level: 5
+
+  potions:
+    max-potion-effects: 5
+    max-potion-effect-duration-ticks: 9600
+    max-potion-effect-amplifier: 10
+    allow-negative-effect-amplifier: false
+
+limits:
+  max-packets-per-second: 500
+  max-bytes: 64000
+  max-bytes-per-second: 256000
+
+spam:
+  # Valid format: HELD_ITEM_CHANGE or HELD ITEM CHANGE
+  multipliers:
+    PLAYER_POSITION: 0.5
+    PLAYER_POSITION_AND_ROTATION: 0.5
+    PLAYER_ROTATION: 0.5
+    PLAYER_FLYING: 0.5
+
+    HELD_ITEM_CHANGE: 1.0
+    ANIMATION: 1.0
+
+commands:
+  # This should be a list of commands you do not want executed on your server.
+
+  - "//calc"
+  - "//calculate"
+  - "//eval"
+  - "//evaluate"
+  - "//solve"
+  - "//asc"
+  - "//ascend"
+  - "//desc"
+  - "//descend"
+  - "/to"
+  - "/hd readtext"
+  - "/holo readtext"
+  - "/hologram readtext"
+  - "/holograms readtext"
+  - "/holographicdisplays readtext"
+  - "/pex promote"
+  - "/pex demote"
+  - "/promote"
+  - "/demote"
+  - "/execute"
+  - "/mvhelp"
+  - "/mv"
+
+disabled-checks:
+# - "SpamA"
+
+
+options:
+  # true = if players are playing they will not be kicked
+  only-necessary-kicks: true
+
+permissions:
+  command-bypass: "Anticrash.commandbypass"
+  notification: "Anticrash.notification"
+
+messages:
+  disconnect-message: "&7(&eAnticrash&7) &fYou are senting too many packets."
+  staff-notification: "&7(&eAnticrash&7) &f%player% &7failed &f%checkname% "
+  staff-notification-info: "&7(&e%info%&7)"

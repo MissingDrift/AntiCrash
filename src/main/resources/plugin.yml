@@ -1,0 +1,9 @@
+name: Anticrash
+version: '${project.version}'
+main: me.missingdrift.anticrash.Anticrash
+api-version: 1.13
+softdepend:
+  - packetevents
+  - ViaVersion
+  - ProtocolSupport
+  - ProtocolLib
